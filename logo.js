@@ -9,17 +9,9 @@ var svgColors = {
 var size = {
     "square": 400
 };
-var svgSelection = d3.select("body").append("svg")
+var svgSelection = d3.select("#logo").append("svg")
     .attr("width", size.square)
     .attr("height", size.square);
-/*
-var background = svgSelection.append("rect")
-    .attr("x", 0)
-    .attr("y", 0)
-    .attr("width", size.square)
-    .attr("height", size.square)
-    .style("fill", svgColors.background);*/
-
 
 var jsonStrokes = [{
 	//green background
@@ -134,5 +126,6 @@ svgSelection.selectAll("rect").transition()
 
 
 
+svgSelection.on("click", function() {location.assign("http://marksbluth.github.io/site.html")});
 
 
