@@ -11,7 +11,9 @@ var size = {
 };
 var svgSelection = d3.select("#logo").append("svg")
     .attr("width", size.square)
-    .attr("height", size.square);
+    .attr("height", size.square)
+    .attr("display", "block")
+    .attr("margin", "auto");
 
 var jsonStrokes = [{
 	//green background
